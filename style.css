@@ -219,3 +219,113 @@ header {
   transform: scale(1.02);
   backface-visibility: hidden;
 }
+
+/* ----------------------------------- Media Queries ----------------------------------- */
+
+/* Para telas menores que 768px (Mobile) */
+@media (max-width: 768px) {
+  /* Ajustes do header */
+  header {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #dnclogo,
+  #logo {
+    width: 100px;
+  }
+
+  /* Ajustes na div .left */
+  .left {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  /* Ajustes na div .grid-text */
+  .grid-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .grid-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .grid-text p {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  /* Ajustes no GIF */
+  #gif {
+    height: 250px;
+  }
+
+  /* Ajustes no botão */
+  #botao {
+    width: 90%;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  /* Ajustes nas cards */
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container-cards {
+    width: 80%;
+  }
+}
+
+/* Para telas menores que 480px (Mobile Portrait) */
+@media (max-width: 480px) {
+  /* Ajustes no header */
+  header {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  #dnclogo,
+  #logo {
+    width: 80px;
+  }
+
+  /* Ajustes na div .grid-text */
+  .grid-text h2 {
+    font-size: 2rem;
+  }
+
+  .grid-text h3 {
+    font-size: 1rem;
+  }
+
+  .grid-text p {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  /* Ajustes no GIF */
+  #gif {
+    height: 200px;
+  }
+
+  /* Ajustes no botão */
+  #botao {
+    width: 100%;
+    padding: 15px;
+    font-size: 25px;
+  }
+
+  /* Ajustes nas cards */
+  .cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container-cards {
+    width: 90%;
+  }
+}
